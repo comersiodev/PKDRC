@@ -1,0 +1,84 @@
+@font-face {
+    font-family:"TNR";
+    src:url("times new roman.ttf");
+}
+
+html, body{
+    margin:0;
+    height:100%;
+    overflow:hidden;
+    touch-action:none;
+}
+
+body{
+    background:url('bg.jpg') no-repeat center;
+    background-size:cover;
+}
+
+.app{
+    max-width:420px;
+    height:100vh;
+    margin:auto;
+    position:relative;
+}
+
+.scene{
+    position:absolute;
+    top:0;
+    width:100%;
+    height:70%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:10px;
+}
+
+.char{
+    height:30vh;
+    object-fit:contain;
+}
+
+.chatbox{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:#e6e6e6;
+    border-top:4px solid black;
+    border-radius:20px 20px 0 0;
+    padding:15px;
+    box-sizing:border-box;
+    font-family:"TNR";
+}
+
+.namebar{
+    background:#111;
+    color:#4da6ff;
+    padding:5px 10px;
+    border-radius:6px;
+    display:inline-block;
+    margin-bottom:8px;
+}
+
+.text{
+    min-height:60px;
+}
+
+#choices button{
+    width:100%;
+    margin-top:6px;
+    padding:10px;
+    border:none;
+    border-radius:12px;
+    background:#ddd;
+}
+
+.controls{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+
+.next{
+    cursor:pointer;
+    font-weight:bold;
+}

@@ -1,0 +1,31 @@
+{
+  "arc1":[
+    {
+      "name":"Aliya",
+      "dialog":[
+        "Aku ngerasa kamu berubah...",
+        "Kamu masih sayang aku ga?"
+      ],
+      "choices":[
+        {"text":"Masih banget 😏","val":20,"reply":"Aku pengen percaya"},
+        {"text":"Ya masih","val":5,"reply":"Aku ga yakin"},
+        {"text":"Perasaan kamu aja","val":-30,"reply":"Kamu gitu terus"}
+      ]
+    }
+  ],
+
+  "arc2":[
+    {
+      "name":"Cindy",
+      "dialog":[
+        "Kamu kemarin kemana?",
+        "Aku nunggu loh"
+      ],
+      "choices":[
+        {"text":"Sama temen","val":15,"reply":"Yaudah"},
+        {"text":"Sibuk","val":0,"reply":"Hmm"},
+        {"text":"Ngapain nanya","val":-30,"reply":"Oke..."}
+      ]
+    }
+  ]
+}

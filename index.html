@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+
+<!-- LOCK VIEW -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0d0f14">
+
+<title>Dhitt si Fakboy - The Game</title>
+
+<style>
+
+html, body{
+margin:0;
+height:100%;
+overflow:hidden;
+font-family:Arial;
+background:#0d0f14;
+color:white;
+touch-action:none;
+}
+
+/* LOCK LANDSCAPE */
+@media screen and (orientation: landscape){
+body::before{
+content:"Putar HP lu ke portrait 🗿";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+font-size:18px;
+}
+}
+
+/* SPLASH */
+#splash{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+background:#0d0f14;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+#splash img{
+width:99vw;
+height:78vh;
+object-fit:cover;
+}
+
+/* MAIN */
+#main{
+display:none;
+width:100vw;
+height:100vh;
+background:url('bg.jpg') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+text-align:center;
+}
+
+.poster{
+width:220px;
+margin-bottom:10px;
+}
+
+.title{
+font-size:26px;
+font-weight:bold;
+}
+
+.subtitle{
+font-size:14px;
+opacity:0.7;
+margin-bottom:15px;
+}
+
+.desc{
+background:white;
+color:black;
+padding:8px;
+border-radius:8px;
+font-size:12px;
+width:220px;
+margin:10px auto;
+}
+
+.mainBtn{
+padding:15px 30px;
+border:none;
+border-radius:25px;
+background:#4da6ff;
+color:white;
+font-size:18px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.arcMenu{
+display:none;
+margin-top:15px;
+}
+
+.arcBtn{
+display:block;
+margin:8px auto;
+padding:12px;
+border:none;
+border-radius:15px;
+background:#222;
+color:white;
+cursor:pointer;
+width:220px;
+}
+
+.locked{
+background:#555;
+opacity:0.5;
+cursor:not-allowed;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SPLASH -->
+<div id="splash">
+<img src="Comérsio Present.png">
+</div>
+
+<!-- MAIN -->
+<div id="main">
+
+<div class="container">
+
+<img src="PKDRC.png" class="poster">
+
+<div class="title">PKDRC</div>
+<div class="subtitle">The Game</div>
+
+<div class="desc">
+Bantu Kai dapetin Dasha lewat pilihan lu 😏
+</div>
+
+<button class="mainBtn" onclick="showArc()">AYO MAIN!</button>
+
+<div class="arcMenu" id="arcMenu">
+<button class="arcBtn" onclick="goArc(1)">Arc 1 - First Talk</button>
+<button class="arcBtn locked">Arc 2 - Coming Soon</button>
+<button class="arcBtn locked">Arc 3 - Coming Soon</button>
+</div>
+
+</div>
+</div>
+
+<script>
+
+// ===== SPLASH =====
+setTimeout(()=>{
+document.getElementById("splash").style.display = "none"
+document.getElementById("main").style.display = "flex"
+}, 2000)
+
+// ===== MENU =====
+function showArc(){
+document.querySelector('.mainBtn').style.display = "none"
+document.getElementById('arcMenu').style.display = "block"
+}
+
+// ===== NAVIGASI =====
+function goArc(num){
+if(num === 1){
+window.location.href = "arc1.html"
+}
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+[
+{
+"name":"Kai",
+"dasha":"Dasha Based.png",
+"dialog":[
+"Dash...",
+"Lu biasanya kalo malem gini masih aktif ya?",
+"Apa emang lagi sibuk aja akhir-akhir ini?"
+],
+"choices":[
+{"text":"Lagi fokus apa sekarang? kerjaan atau hal lain?","type":"good","reply":"Gua lagi fokus kerja sih… lagi banyak aja","dasha":"Dasha Based.png"},
+{"text":"Sering keliatan online sih","type":"mid","reply":"Iya… kadang aja sih","dasha":"Dasha Thinking.png"},
+{"text":"Ya biasa aja sih","type":"bad","reply":"Yaudah…","dasha":"Dasha Sulk.png"}
+]
+},
+
+{
+"name":"Kai",
+"dasha":"Dasha Thinking.png",
+"dialog":[
+"Kerjaan lu sekarang emang lagi padet ya?",
+"Kayaknya nyita waktu banget"
+],
+"choices":[
+{"text":"Lu tipe yang kalo kerja fokus banget ya","type":"good","reply":"Iya… kalo ga gitu berantakan","dasha":"Dasha Based.png"},
+{"text":"Capek keliatannya","type":"mid","reply":"Lumayan sih…","dasha":"Dasha Thinking.png"},
+{"text":"Ya semua orang juga capek","type":"bad","reply":"Iya sih…","dasha":"Dasha Sulk.png"}
+]
+},
+
+{
+"name":"Kai",
+"dasha":"Dasha Based.png",
+"dialog":[
+"Kalo lagi capek gitu...",
+"Lu biasanya ngapain?"
+],
+"choices":[
+{"text":"Cari distraksi atau istirahat dulu?","type":"good","reply":"Biasanya nonton sih","dasha":"Dasha Based.png"},
+{"text":"Tidur aja paling","type":"mid","reply":"Kadang iya","dasha":"Dasha Thinking.png"},
+{"text":"Yaudah jalanin aja","type":"bad","reply":"Lu gampang banget ngomong","dasha":"Dasha Sulk.png"}
+]
+},
+
+{
+"name":"Kai",
+"dasha":"Dasha Thinking.png",
+"dialog":[
+"Berarti lu orangnya ga gampang nyerah ya",
+"Walau capek tetep jalan"
+],
+"choices":[
+{"text":"Lu keliatan konsisten sih","type":"good","reply":"Gua coba sih…","dasha":"Dasha Blushing.png"},
+{"text":"Ya biasa aja","type":"mid","reply":"Hmm…","dasha":"Dasha Thinking.png"},
+{"text":"Maksa banget sih","type":"bad","reply":"Ya itu pilihan gua","dasha":"Dasha Sulk.png"}
+]
+},
+
+{
+"name":"Kai",
+"dasha":"Dasha Based.png",
+"dialog":[
+"Tapi jujur sih...",
+"Ga semua orang bisa kayak gitu"
+],
+"choices":[
+{"text":"Butuh mental juga","type":"good","reply":"Iya… ga semua kuat","dasha":"Dasha Based.png"},
+{"text":"Ya tergantung orang","type":"mid","reply":"Iya sih","dasha":"Dasha Thinking.png"},
+{"text":"Ya lebay aja","type":"bad","reply":"Lu ga ngerti","dasha":"Dasha Sulk.png"}
+]
+},
+
+{
+"name":"Kai",
+"dasha":"Dasha Based.png",
+"dialog":[
+"Eh bentar ya Dash...",
+"Gua ada urusan dikit",
+"Nanti lanjut lagi"
+],
+"choices":[
+{"text":"Oke santai","type":"good","reply":"Iya… jangan lama ya","dasha":"Dasha Blushing.png"},
+{"text":"Yaudah","type":"mid","reply":"Hmm","dasha":"Dasha Thinking.png"},
+{"text":"Yaudah sana","type":"bad","reply":"Iya...","dasha":"Dasha Sulk.png"}
+]
+},
+
+{
+"name":"Dasha",
+"dasha":"Dasha Calling.png",
+"dialog":[
+"...",
+"Kai?",
+"Tadi lu ilang"
+],
+"choices":[
+{"text":"(ghost dikit)","type":"ghost","reply":"Hmm… yaudah","dasha":"Dasha Suspect.png"},
+{"text":"Tadi kepotong bentar","type":"good","reply":"Yaudah lanjut aja","dasha":"Dasha Based.png"},
+{"text":"Lu nungguin ya?","type":"mid","reply":"Ga juga… cuma aneh aja","dasha":"Dasha Thinking.png"}
+]
+},
+
+{
+"name":"Kai",
+"dasha":"Dasha Calling.png",
+"dialog":[
+"(beberapa waktu kemudian)",
+" Kai...",
+"Lu lagi free?"
+],
+"choices":[
+{"text":"Gua kepikiran obrolan tadi","type":"good","reply":"Ohh serius?","dasha":"Dasha Blushing.png"},
+{"text":"Lanjut aja tadi","type":"mid","reply":"Iya tadi ya…","dasha":"Dasha Thinking.png"},
+{"text":"Gabut aja","type":"bad","reply":"Yaudah sih","dasha":"Dasha Sulk.png"}
+]
+},
+
+{
+"name":"Dasha",
+"dasha":"Dasha Thinking.png",
+"dialog":[
+"Lu tuh aneh ya...",
+"Tapi enak diajak ngobrol"
+],
+"choices":[
+{"text":"Yang penting ga maksa sih","type":"good","reply":"Iya… itu sih","dasha":"Dasha Based.png"},
+{"text":"Ya biasa aja","type":"mid","reply":"Hmm","dasha":"Dasha Thinking.png"},
+{"text":"Lu aja yang ngerasa","type":"bad","reply":"Yaudah deh","dasha":"Dasha Sulk.png"}
+]
+},
+
+{
+"name":"Dasha",
+"dasha":"Dasha Thinking.png",
+"dialog":[
+"Gua agak susah percaya orang baru sih",
+"Pernah kejadian soalnya"
+],
+"choices":[
+{"text":"Wajar sih, pengalaman pasti ngaruh","type":"good","reply":"Iya… itu sih","dasha":"Dasha Based.png"},
+{"text":"Ya coba aja dulu","type":"mid","reply":"Pelan-pelan sih","dasha":"Dasha Thinking.png"},
+{"text":"Ya salah lu sendiri","type":"bad","reply":"Ih apaan sih","dasha":"Dasha Sulk.png"}
+]
+},
+
+{
+"name":"Kai",
+"dasha":"Dasha Based.png",
+"dialog":[
+"Ga semua orang harus langsung percaya sih",
+"Pelan-pelan juga gapapa"
+],
+"choices":[
+{"text":"Yang penting nyaman dulu","type":"good","reply":"Iya… gua juga ngerasa gitu","dasha":"Dasha Blushing.png"},
+{"text":"Ya liat nanti aja","type":"mid","reply":"Hmm","dasha":"Dasha Thinking.png"},
+{"text":"Terserah lu","type":"bad","reply":"Lu ga jelas","dasha":"Dasha Sulk.png"}
+]
+}
+]

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gameplay</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="game">
+
+<div class="wrapper">
+
+<div class="characters">
+<img src="MC.png" class="char">
+<img src="Kai Based.png" class="char">
+</div>
+
+<div class="chat-box">
+<div id="name"></div>
+<div id="chat"></div>
+<div id="choices"></div>
+<button id="nextBtn">NEXT</button>
+</div>
+
+</div>
+
+<script>
+let current=0, sub=0, score=100
+let data
+
+const chat=document.getElementById("chat")
+const nameEl=document.getElementById("name")
+const choices=document.getElementById("choices")
+const nextBtn=document.getElementById("nextBtn")
+
+const urlParams = new URLSearchParams(window.location.search)
+const selectedArc = urlParams.get("arc")
+
+fetch("data.json")
+.then(res=>res.json())
+.then(json=>{
+    data = json[selectedArc]
+    load()
+})
+
+function load(){
+let s=data[current]
+
+chat.innerText=s.dialog[sub]
+nameEl.innerText=s.name
+
+choices.innerHTML=""
+
+if(sub < s.dialog.length-1){
+nextBtn.style.display="block"
+}else{
+nextBtn.style.display="none"
+
+s.choices.forEach(c=>{
+let b=document.createElement("button")
+b.innerText=c.text
+
+b.onclick=()=>{
+score+=c.val
+chat.innerText=c.reply
+choices.innerHTML=""
+nextBtn.style.display="block"
+}
+
+choices.appendChild(b)
+})
+}
+}
+
+nextBtn.onclick=()=>{
+sub++
+if(sub>=data[current].dialog.length){
+current++
+sub=0
+if(current>=data.length) end()
+else load()
+}else{
+load()
+}
+}
+
+function end(){
+let status=""
+
+if(score<=39) status="TERLALU GOOD BOY 🗿"
+else if(score<=79) status="FAKBOY ROOKIE 🗿"
+else status="FAKBOY MASTERCLASS 💀"
+
+document.body.innerHTML=`
+<div class="result">
+<h2>Skor: ${score}</h2>
+<h2>${status}</h2>
+</div>
+`
+}
+</script>
+
+</body>
+</html>
